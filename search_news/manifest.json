@@ -1,0 +1,35 @@
+{
+  "name": "search_news",
+  "description": "Search news articles by keyword, date range, domain, language, and sort order.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "query": {
+      "type": "string",
+      "description": "Keywords or phrases to search for. Required."
+    },
+    "from_date": {
+      "type": "string",
+      "description": "Oldest article date (YYYY-MM-DD). Optional."
+    },
+    "to_date": {
+      "type": "string",
+      "description": "Newest article date (YYYY-MM-DD). Optional."
+    },
+    "domains": {
+      "type": "string",
+      "description": "Comma-separated list of domains to restrict to (e.g. 'bbc.co.uk,cnn.com'). Optional."
+    },
+    "language": {
+      "type": "string",
+      "description": "Two-letter ISO language code (e.g. 'en'). Optional, defaults to all languages."
+    },
+    "sort_by": {
+      "type": "string",
+      "description": "Sort order: 'relevancy', 'popularity', or 'publishedAt'. Optional, defaults to 'publishedAt'."
+    },
+    "count": {
+      "type": "integer",
+      "description": "Number of articles to return (1-20). Optional, defaults to 5."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "newsapi",
+  "description": "Search and browse news articles via the NewsAPI.org API.",
+  "config": {
+    "api_key": {
+      "description": "NewsAPI.org API key (get one at https://newsapi.org/register)",
+      "required": true
+    }
+  }
+}

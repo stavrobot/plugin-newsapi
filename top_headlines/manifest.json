@@ -1,0 +1,27 @@
+{
+  "name": "top_headlines",
+  "description": "Get current top headlines filtered by country, category, or source.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "country": {
+      "type": "string",
+      "description": "Two-letter ISO country code (e.g. 'us', 'gb'). Optional."
+    },
+    "category": {
+      "type": "string",
+      "description": "Category: 'business', 'entertainment', 'general', 'health', 'science', 'sports', or 'technology'. Optional."
+    },
+    "sources": {
+      "type": "string",
+      "description": "Comma-separated source IDs (e.g. 'bbc-news,cnn'). Cannot be combined with country or category. Optional."
+    },
+    "query": {
+      "type": "string",
+      "description": "Keywords to filter headlines. Optional."
+    },
+    "count": {
+      "type": "integer",
+      "description": "Number of articles to return (1-20). Optional, defaults to 5."
+    }
+  }
+}
